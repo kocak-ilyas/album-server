@@ -14,7 +14,7 @@ app.use(cors());
 app.use("/posts", postRoutes);
 
 //
-app.get("/", (req, res) => {res.send("Server API is Running :))")});
+app.get("/", (req, res) => {res.send("Server API is Running")});
 //
 const CONNECTION_URL = `mongodb+srv://${process.env.mongoDB_user}:${process.env.mongoDB_key}@cluster0.tk2q6.mongodb.net/${process.env.mongoDB_dataBase}?retryWrites=true&w=majority`;
 
