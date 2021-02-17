@@ -14,14 +14,14 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://album:album456@cluster0.tk2q6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
+// const MongoClient = require('mongodb').MongoClient;
+// const uri = "mongodb+srv://album:album456@cluster0.tk2q6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+// client.connect(err => {
+//   const collection = client.db("test").collection("devices");
+//   // perform actions on the collection object
+//   client.close();
+// });
 
 const CONNECTION_URL = 
 "mongodb+srv://album:album456@cluster0.tk2q6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
