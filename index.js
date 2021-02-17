@@ -25,9 +25,9 @@ const CONNECTION_URL = `mongodb+srv://album:wZ7JJ98D0SDi8jVV@cluster0.tk2q6.mong
 // const CONNECTION_URL = `mongodb+srv://${process.env.mongoDB_user}:${process.env.mongoDB_key}@cluster0.tk2q6.mongodb.net/${process.env.mongoDB_dataBase}?retryWrites=true&w=majority`;
 
 
-mongoose
-  .connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+// mongoose
+//   .connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
   // .then(() =>app.listen(PORT, () => console.log(`Server Running on Port: ${PORT}`)))
-  .catch((error) => console.log(`${error} did not connect`));
+  // .catch((error) => console.log(`${error} did not connect`));
 
 mongoose.set("useFindAndModify", false);
