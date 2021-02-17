@@ -27,9 +27,7 @@ const CONNECTION_URL = `mongodb+srv://album:wZ7JJ98D0SDi8jVV@cluster0.tk2q6.mong
 
 mongoose
   .connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() =>
-    app.listen(PORT, () => console.log(`Server Running on Port: ${PORT}`))
-  )
+  // .then(() =>app.listen(PORT, () => console.log(`Server Running on Port: ${PORT}`)))
   .catch((error) => console.log(`${error} did not connect`));
 
 mongoose.set("useFindAndModify", false);
