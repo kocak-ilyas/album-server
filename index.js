@@ -14,7 +14,8 @@ app.use(cors());
 app.use("/posts", postRoutes);
 
 const CONNECTION_URL =
-  "mongodb+srv://album:album456@cluster0.tk2q6.mongodb.net/albumDB?retryWrites=true&w=majority";
+  `mongodb+srv://${process.env.USER}:${process.env.KEY}@cluster0.tk2q6.mongodb.net/${process.env.DB}?retryWrites=true&w=majority`
+  // "mongodb+srv://album:album456@cluster0.tk2q6.mongodb.net/albumDB?retryWrites=true&w=majority";
 
 const PORT = process.env.PORT || 5000;
 
