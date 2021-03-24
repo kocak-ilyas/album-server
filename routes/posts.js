@@ -6,7 +6,7 @@ import {
   likePost,
   deletePost,
 } from "../controllers/posts.js";
-import auth from "../middleware/auth";
+import auth from "../middleware/auth.js";
 const router = express.Router();
 
 router.get("/", getPosts);
